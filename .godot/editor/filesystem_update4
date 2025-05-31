@@ -1,0 +1,6 @@
+res://menu.gd
+res://menu.tscn
+res://criar_sala_button.gd
+res://jogar_button.gd
+res://sair_button.gd
+res://entrar_sala_button.gd
