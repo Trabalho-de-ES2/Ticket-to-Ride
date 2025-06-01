@@ -1,8 +1,8 @@
 [gd_scene load_steps=33 format=3 uid="uid://bhix778f61kw0"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_4hy44"]
-[ext_resource type="Texture2D" uid="uid://bgkku4ujgxb8c" path="res://assets/temp_bg.png" id="1_mae5d"]
 [ext_resource type="Texture2D" uid="uid://c5pidmkksjq17" path="res://assets/jogar.png" id="2_4hy44"]
+[ext_resource type="Texture2D" uid="uid://bysm40m0lrb40" path="res://assets/background.png" id="2_iqepy"]
 [ext_resource type="Texture2D" uid="uid://dkd0e3kyhwxvo" path="res://assets/sair.png" id="3_ytr4m"]
 [ext_resource type="Script" path="res://jogar_button.gd" id="4_kk3ma"]
 [ext_resource type="Texture2D" uid="uid://dtg464quefjxm" path="res://assets/criar.png" id="5_ecwwl"]
@@ -61,7 +61,7 @@ script = ExtResource("1_4hy44")
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(0.00152305, 0)
 scale = Vector2(0.750326, 0.631836)
-texture = ExtResource("1_mae5d")
+texture = ExtResource("2_iqepy")
 offset = Vector2(767.332, 511.209)
 
 [node name="jogar_button" type="Button" parent="."]
@@ -173,18 +173,6 @@ theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8uog0")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_k5x1w")
 icon = ExtResource("7_nrnbx")
 script = ExtResource("10_iqepy")
-
-[node name="Entrar" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(333, 335)
-scale = Vector2(0.352116, 0.352116)
-texture = ExtResource("7_nrnbx")
-
-[node name="Criar" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(333, 473)
-scale = Vector2(0.352, 0.352)
-texture = ExtResource("5_ecwwl")
 
 [connection signal="pressed" from="jogar_button" to="jogar_button" method="_on_pressed"]
 [connection signal="pressed" from="jogar_button" to="sair_button" method="_on_jogar_button_pressed"]

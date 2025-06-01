@@ -11,6 +11,6 @@ config_version=5
 [application]
 
 config/name="Ticket to Ride"
-run/main_scene="uid://mbkvxfngftw5"
+run/main_scene="uid://bhix778f61kw0"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
