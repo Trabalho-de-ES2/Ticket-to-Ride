@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqfo1boq0p117"]
+
+[ext_resource type="Script" uid="uid://c5edii2mi5xnf" path="res://Scripts/city_marker.gd" id="1_8i0u3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qnaus"]
+radius = 12.0
+
+[node name="CityMarker" type="Area2D"]
+script = ExtResource("1_8i0u3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_qnaus")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
