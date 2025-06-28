@@ -1,15 +1,16 @@
 [gd_scene load_steps=33 format=3 uid="uid://bhix778f61kw0"]
 
-[ext_resource type="Script" path="res://menu.gd" id="1_4hy44"]
+[ext_resource type="Script" uid="uid://bbrt6ggorggm3" path="res://Scripts/menu.gd" id="1_4hy44"]
+[ext_resource type="Texture2D" uid="uid://bgkku4ujgxb8c" path="res://assets/temp_bg.png" id="1_mae5d"]
 [ext_resource type="Texture2D" uid="uid://c5pidmkksjq17" path="res://assets/jogar.png" id="2_4hy44"]
 [ext_resource type="Texture2D" uid="uid://bysm40m0lrb40" path="res://assets/background.png" id="2_iqepy"]
 [ext_resource type="Texture2D" uid="uid://dkd0e3kyhwxvo" path="res://assets/sair.png" id="3_ytr4m"]
-[ext_resource type="Script" path="res://jogar_button.gd" id="4_kk3ma"]
+[ext_resource type="Script" uid="uid://c4ra6ca4k8yat" path="res://Scripts/jogar_button.gd" id="4_kk3ma"]
 [ext_resource type="Texture2D" uid="uid://dtg464quefjxm" path="res://assets/criar.png" id="5_ecwwl"]
-[ext_resource type="Script" path="res://criar_sala_button.gd" id="6_kk3ma"]
-[ext_resource type="Script" path="res://sair_button.gd" id="6_nrnbx"]
+[ext_resource type="Script" uid="uid://hlcelwsowr1m" path="res://Scripts/criar_sala_button.gd" id="6_kk3ma"]
+[ext_resource type="Script" uid="uid://cem12svrfwgl1" path="res://Scripts/sair_button.gd" id="6_nrnbx"]
 [ext_resource type="Texture2D" uid="uid://dkucctml73goo" path="res://assets/entrar.png" id="7_nrnbx"]
-[ext_resource type="Script" path="res://entrar_sala_button.gd" id="10_iqepy"]
+[ext_resource type="Script" uid="uid://d1exlnng6dyuw" path="res://Scripts/entrar_sala_button.gd" id="10_iqepy"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oxnod"]
 
