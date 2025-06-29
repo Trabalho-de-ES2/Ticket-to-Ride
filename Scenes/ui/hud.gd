@@ -23,14 +23,25 @@ func _ready():
 	
 	# Connect the Train Card Deck click area
 	if train_deck_pile_click_area:
-		train_deck_pile_click_area.connect("input_event", _on_train_deck_area_input_event)
+		# Verifica se o sinal JÁ está conectado antes de tentar conectar
+		if not train_deck_pile_click_area.is_connected("input_event", _on_train_deck_area_input_event):
+				train_deck_pile_click_area.connect("input_event", _on_train_deck_area_input_event)
+				print("Sinal 'input_event' do TrainDeckPileClickArea conectado com sucesso.")
+		else:
+			print("Sinal 'input_event' do TrainDeckPileClickArea já estava conectado. Nenhuma nova conexão feita.")
 	else:
+		print("Erro: train_deck_pile_click_area não foi encontrado!")
 		# This will print an error if the path or node name is wrong, helping you debug.
 		printerr("Error: 'TrainDeckPile/ClickArea' not found in HUD scene! Check @onready path.")
 
 	# Connect the Destination Ticket Pile click area
 	if destination_deck_pile_click_area:
-		destination_deck_pile_click_area.connect("input_event", _on_destination_deck_area_input_event)
+	# Verifica se o sinal 'input_event' já está conectado antes de tentar conectá-lo
+		if not destination_deck_pile_click_area.is_connected("input_event", _on_destination_deck_area_input_event):
+			destination_deck_pile_click_area.connect("input_event", _on_destination_deck_area_input_event)
+			print("Sinal 'input_event' do DestinationDeckPileClickArea conectado com sucesso.")
+		else:
+			print("Sinal 'input_event' do DestinationDeckPileClickArea já estava conectado. Nenhuma nova conexão feita.")
 	else:
 		printerr("Error: 'DestinationDeckPile/ClickArea' not found in HUD scene! Check @onready path.")
 	
