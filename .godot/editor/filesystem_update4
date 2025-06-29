@@ -1,10 +1,8 @@
-res://Scenes/game_board.tscn
-res://Scenes/menu.tscn
-res://Scripts/data/PlayerData.gd
-res://Scripts/managers/GameManager.gd
-res://Scripts/menu.gd
-res://Scripts/train_card.gd
-res://Scenes/components/TrainCard.tscn
-res://Scenes/ui/hud.gd
 res://Scenes/ui/HUD.tscn
-res://Scripts/city_marker.gd
+res://Scenes/game_board.tscn
+res://Scenes/components/DestinationTicketCard.tscn
+res://Scripts/components/destination_ticket_card.gd
+res://Scripts/managers/GameManager.gd
+res://Scenes/ui/DestinationTicketChooser.tscn
+res://Scripts/ui/destination_ticket_chooser.gd
+res://Scripts/ui/hud.gd

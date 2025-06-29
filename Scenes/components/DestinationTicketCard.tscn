@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjg7iosmrdggi"]
+
+[ext_resource type="Script" uid="uid://do2j7qyan01jr" path="res://Scripts/components/destination_ticket_card.gd" id="1_h1jgc"]
+[ext_resource type="Texture2D" uid="uid://bk5x2yvlhirwl" path="res://assets/destinations/path684.png" id="2_uhfln"]
+
+[node name="DestinationTicketCard" type="PanelContainer"]
+script = ExtResource("1_h1jgc")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="RouteImage" type="TextureRect" parent="VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_uhfln")
+
+[node name="KeepCheckBox" type="CheckBox" parent="VBoxContainer"]
+layout_mode = 2
+text = "Keep"
+alignment = 1

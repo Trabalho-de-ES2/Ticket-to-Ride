@@ -172,7 +172,6 @@ func initialize_train_deck():
 	print("Train deck initialized and shuffled. Total cards: ", train_card_deck.size())
 
 func initialize_destination_ticket_deck():
-	# TODO: This needs to be filled with your destination ticket data.
 	# Each ticket can be a dictionary: {"from": "CityA", "to": "CityB", "points": 10}
 	destination_ticket_deck.append({"from": "Saquarema", "to": "Rio das Ostras", "points": 9})
 	destination_ticket_deck.append({"from": "Mangaratiba", "to": "Rio das Ostras", "points": 22})

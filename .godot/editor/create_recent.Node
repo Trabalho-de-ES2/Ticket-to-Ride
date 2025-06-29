@@ -1,9 +1,12 @@
+PanelContainer
+ColorRect
+Button
 HBoxContainer
-CollisionShape2D
-Area2D
-TextureRect
 Label
 VBoxContainer
+CenterContainer
+CheckBox
+TextureRect
+CollisionShape2D
+Area2D
 CanvasLayer
-PanelContainer
-Button
