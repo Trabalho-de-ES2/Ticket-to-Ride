@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://bhix778f61kw0"]
+[gd_scene load_steps=31 format=3 uid="uid://bhix778f61kw0"]
 
 [ext_resource type="Script" uid="uid://bbrt6ggorggm3" path="res://Scripts/menu.gd" id="1_4hy44"]
 [ext_resource type="Texture2D" uid="uid://c5pidmkksjq17" path="res://assets/jogar.png" id="2_4hy44"]
@@ -8,8 +8,6 @@
 [ext_resource type="Texture2D" uid="uid://dtg464quefjxm" path="res://assets/criar.png" id="5_ecwwl"]
 [ext_resource type="Script" uid="uid://hlcelwsowr1m" path="res://Scripts/criar_sala_button.gd" id="6_kk3ma"]
 [ext_resource type="Script" uid="uid://cem12svrfwgl1" path="res://Scripts/sair_button.gd" id="6_nrnbx"]
-[ext_resource type="Texture2D" uid="uid://dkucctml73goo" path="res://assets/entrar.png" id="7_nrnbx"]
-[ext_resource type="Script" uid="uid://d1exlnng6dyuw" path="res://Scripts/entrar_sala_button.gd" id="10_iqepy"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oxnod"]
 
@@ -146,37 +144,8 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_k5x1w")
 icon = ExtResource("5_ecwwl")
 script = ExtResource("6_kk3ma")
 
-[node name="entrar_sala_button" type="Button" parent="."]
-visible = false
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -793.0
-offset_top = -115.0
-offset_right = -61.0
-offset_bottom = 243.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.352, 0.352)
-theme_override_styles/focus = SubResource("StyleBoxEmpty_oxnod")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_gd0jp")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_4ndjb")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_3ls4m")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5h80m")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_w25hu")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_td6mg")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_guify")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_oil5j")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8uog0")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_k5x1w")
-icon = ExtResource("7_nrnbx")
-script = ExtResource("10_iqepy")
-
 [connection signal="pressed" from="jogar_button" to="jogar_button" method="_on_pressed"]
 [connection signal="pressed" from="jogar_button" to="sair_button" method="_on_jogar_button_pressed"]
 [connection signal="pressed" from="jogar_button" to="criar_sala_button" method="_on_jogar_button_pressed"]
-[connection signal="pressed" from="jogar_button" to="entrar_sala_button" method="_on_jogar_button_pressed"]
 [connection signal="pressed" from="sair_button" to="." method="_on_sair_button_pressed"]
-[connection signal="pressed" from="entrar_sala_button" to="." method="_on_entrar_sala_button_pressed"]
+[connection signal="pressed" from="criar_sala_button" to="." method="_on_criar_sala_button_pressed"]
