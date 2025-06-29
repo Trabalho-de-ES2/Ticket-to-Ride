@@ -1,16 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://c6x4jgr41c5by"]
+[gd_scene load_steps=5 format=3 uid="uid://c6x4jgr41c5by"]
 
+[ext_resource type="PackedScene" uid="uid://jdmgtj2chb6c" path="res://Scenes/ui/HUD.tscn" id="1_nhcq1"]
 [ext_resource type="Texture2D" uid="uid://olwqh7x03cs6" path="res://assets/mapa.png" id="1_pxj3o"]
 [ext_resource type="PackedScene" uid="uid://dqfo1boq0p117" path="res://Scenes/city_marker.tscn" id="2_legbf"]
 [ext_resource type="PackedScene" uid="uid://cgnytfkerdmum" path="res://Scenes/route.tscn" id="3_s5vlf"]
 
-[node name="GameBoard" type="Control"]
+[node name="GameBoard" type="Control" groups=["game_board_group"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Hud" parent="." instance=ExtResource("1_nhcq1")]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -2163,7 +2166,6 @@ color = 11
 [node name="CollisionShape2D" parent="Route67/Segment1" index="0"]
 position = Vector2(-59.3386, 21.4471)
 rotation = -0.123023
-scale = Vector2(1, 1)
 
 [node name="CollisionShape2D" parent="Route67/Segment2" index="0"]
 position = Vector2(102.177, 22.2004)
