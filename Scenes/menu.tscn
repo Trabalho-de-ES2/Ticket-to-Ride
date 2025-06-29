@@ -1,7 +1,6 @@
 [gd_scene load_steps=33 format=3 uid="uid://bhix778f61kw0"]
 
 [ext_resource type="Script" uid="uid://bbrt6ggorggm3" path="res://Scripts/menu.gd" id="1_4hy44"]
-[ext_resource type="Texture2D" uid="uid://bgkku4ujgxb8c" path="res://assets/temp_bg.png" id="1_mae5d"]
 [ext_resource type="Texture2D" uid="uid://c5pidmkksjq17" path="res://assets/jogar.png" id="2_4hy44"]
 [ext_resource type="Texture2D" uid="uid://bysm40m0lrb40" path="res://assets/background.png" id="2_iqepy"]
 [ext_resource type="Texture2D" uid="uid://dkd0e3kyhwxvo" path="res://assets/sair.png" id="3_ytr4m"]
@@ -71,10 +70,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -371.0
-offset_top = -51.0
-offset_right = 1518.0
-offset_bottom = 797.0
+offset_left = -791.0
+offset_top = -249.0
+offset_right = 1098.0
+offset_bottom = 599.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.134, 0.134)
@@ -98,10 +97,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -371.0
-offset_top = 85.0
-offset_right = 1544.0
-offset_bottom = 1041.0
+offset_left = -791.0
+offset_top = -113.0
+offset_right = 1124.0
+offset_bottom = 843.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.134, 0.134)
@@ -126,10 +125,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -371.0
-offset_top = -51.0
-offset_right = 361.0
-offset_bottom = 309.0
+offset_left = -793.0
+offset_top = -252.0
+offset_right = -61.0
+offset_bottom = 108.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.352, 0.352)
@@ -154,10 +153,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -371.0
-offset_top = 86.0
-offset_right = 361.0
-offset_bottom = 444.0
+offset_left = -793.0
+offset_top = -115.0
+offset_right = -61.0
+offset_bottom = 243.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.352, 0.352)
@@ -180,4 +179,4 @@ script = ExtResource("10_iqepy")
 [connection signal="pressed" from="jogar_button" to="criar_sala_button" method="_on_jogar_button_pressed"]
 [connection signal="pressed" from="jogar_button" to="entrar_sala_button" method="_on_jogar_button_pressed"]
 [connection signal="pressed" from="sair_button" to="." method="_on_sair_button_pressed"]
-[connection signal="pressed" from="entrar_sala_button" to="criar_sala_button" method="_on_entrar_sala_button_pressed"]
+[connection signal="pressed" from="entrar_sala_button" to="." method="_on_entrar_sala_button_pressed"]

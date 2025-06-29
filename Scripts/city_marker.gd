@@ -16,3 +16,7 @@ func _on_CityMarker_input_event(viewport: Node, event: InputEvent, shape_idx: in
 
 func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	pass # Replace with function body.
+
+
+func _on_route_clicked_from_board(route_data: Dictionary) -> void:
+	pass # Replace with function body.
