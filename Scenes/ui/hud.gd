@@ -66,7 +66,7 @@ func update_player_hand_display(hand_cards: Array):
 	
 	# Add new card instances based on the current hand_cards array.
 	for card_data in hand_cards:
-		var card_instance = preload("res://scenes/components/TrainCard.tscn").instantiate()
+		var card_instance = preload("res://Scenes/components/TrainCard.tscn").instantiate()
 		card_instance.card_data = card_data # Pass the card data to the card instance.
 		player_hand_container.add_child(card_instance)
 	print("HUD: Updated player hand display. Cards: ", hand_cards.size())
@@ -81,7 +81,7 @@ func update_face_up_cards_display(face_up_cards: Array):
 	for i in range(face_up_cards.size()):
 		var card_data = face_up_cards[i]
 		if card_data: # If there's a card in this slot (not null)
-			var card_instance = preload("res://scenes/components/TrainCard.tscn").instantiate()
+			var card_instance = preload("res://Scenes/components/TrainCard.tscn").instantiate()
 			card_instance.card_data = card_data
 			face_up_cards_container.add_child(card_instance)
 			
