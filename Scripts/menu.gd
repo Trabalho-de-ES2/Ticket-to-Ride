@@ -17,4 +17,4 @@ func _on_criar_sala_button_pressed():
 	# Tell the GameManager to start the game logic.
 	GameManager.start_game()
 	# Then, change the scene to the game board.
-	get_tree().change_scene_to_file("res://scenes/GameBoard.tscn")
+	get_tree().change_scene_to_file("res://Scenes/game_board.tscn")

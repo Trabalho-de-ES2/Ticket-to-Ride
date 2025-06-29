@@ -1,4 +1,6 @@
 res://Scenes/ui/HUD.tscn
+res://Scripts/managers/GameManager.gd
+res://Scenes/ui/hud.gd
 res://Scenes/game_board.tscn
 res://Scenes/menu.tscn
 res://Scripts/menu.gd

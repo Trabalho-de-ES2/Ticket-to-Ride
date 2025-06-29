@@ -161,7 +161,7 @@ func start_game():
 func initialize_train_deck():
 	# TODO: This will need to be filled with the correct number of each card.
 	# 12 of each color (Red, Blue, etc.) + 14 Locomotives.
-	for color_name in CardColor:
+	for color_name in CardColor.values():
 		if color_name != CardColor.LOCOMOTIVE:
 			for i in range(12):
 				train_card_deck.append({"color": color_name})
