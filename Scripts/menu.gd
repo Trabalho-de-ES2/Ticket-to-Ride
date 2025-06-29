@@ -13,7 +13,7 @@ func _unhandled_input(event):
 
 
 # In MainMenu.gd
-func _on_entrar_sala_button_pressed():
+func _on_criar_sala_button_pressed():
 	# Tell the GameManager to start the game logic.
 	GameManager.start_game()
 	# Then, change the scene to the game board.
