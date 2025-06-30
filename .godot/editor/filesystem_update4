@@ -1,7 +1,0 @@
-res://Scenes/ui/HUD.tscn
-res://Scenes/game_board.tscn
-res://Scenes/menu.tscn
-res://Scenes/components/TrainCard.tscn
-res://Scenes/city_marker.tscn
-res://Scenes/route.tscn
-res://Scripts/train_card.gd
