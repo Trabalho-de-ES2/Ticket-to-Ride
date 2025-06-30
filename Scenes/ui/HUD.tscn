@@ -10,28 +10,26 @@ size = Vector2(69.75, 106)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_brl7u"]
 size = Vector2(292, 182)
 
-[node name="Hud" type="Node2D"]
-
-[node name="HUD" type="CanvasLayer" parent="." groups=["hud_group"]]
+[node name="HUD" type="CanvasLayer" groups=["hud_group"]]
 script = ExtResource("1_brl7u")
 
-[node name="PlayerInfo" type="VBoxContainer" parent="HUD"]
+[node name="PlayerInfo" type="VBoxContainer" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="PlayerNameLabel" type="Label" parent="HUD/PlayerInfo"]
+[node name="PlayerNameLabel" type="Label" parent="PlayerInfo"]
 layout_mode = 2
 text = "Player Name: [None]"
 
-[node name="ScoreLabel" type="Label" parent="HUD/PlayerInfo"]
+[node name="ScoreLabel" type="Label" parent="PlayerInfo"]
 layout_mode = 2
 text = "Score: 0"
 
-[node name="TrainsLabel" type="Label" parent="HUD/PlayerInfo"]
+[node name="TrainsLabel" type="Label" parent="PlayerInfo"]
 layout_mode = 2
 text = "Trains: 45"
 
-[node name="TrainDeckPile" type="TextureRect" parent="HUD"]
+[node name="TrainDeckPile" type="TextureRect" parent="."]
 anchors_preset = 6
 anchor_left = 1.0
 anchor_top = 0.5
@@ -46,13 +44,13 @@ grow_vertical = 2
 texture = ExtResource("2_1c3be")
 expand_mode = 1
 
-[node name="ClickArea" type="Area2D" parent="HUD/TrainDeckPile"]
+[node name="ClickArea" type="Area2D" parent="TrainDeckPile"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HUD/TrainDeckPile/ClickArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TrainDeckPile/ClickArea"]
 position = Vector2(40.125, 60)
 shape = SubResource("RectangleShape2D_uqghy")
 
-[node name="FaceUpCardsContainer" type="HBoxContainer" parent="HUD"]
+[node name="FaceUpCardsContainer" type="HBoxContainer" parent="."]
 custom_minimum_size = Vector2(440, 130)
 anchors_preset = 5
 anchor_left = 0.5
@@ -63,7 +61,7 @@ offset_right = 20.0
 offset_bottom = 60.0
 grow_horizontal = 2
 
-[node name="DestinationDeckPile" type="TextureRect" parent="HUD"]
+[node name="DestinationDeckPile" type="TextureRect" parent="."]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
@@ -75,13 +73,13 @@ grow_horizontal = 0
 texture = ExtResource("3_1oi58")
 expand_mode = 1
 
-[node name="ClickArea" type="Area2D" parent="HUD/DestinationDeckPile"]
+[node name="ClickArea" type="Area2D" parent="DestinationDeckPile"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HUD/DestinationDeckPile/ClickArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DestinationDeckPile/ClickArea"]
 position = Vector2(161, 105)
 shape = SubResource("RectangleShape2D_brl7u")
 
-[node name="PlayerHandContainer" type="HBoxContainer" parent="HUD"]
+[node name="PlayerHandContainer" type="HBoxContainer" parent="."]
 custom_minimum_size = Vector2(0, 130)
 anchors_preset = 7
 anchor_left = 0.5
@@ -95,5 +93,5 @@ offset_bottom = -20.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[connection signal="input_event" from="HUD/TrainDeckPile/ClickArea" to="HUD" method="_on_train_deck_area_input_event"]
-[connection signal="input_event" from="HUD/DestinationDeckPile/ClickArea" to="HUD" method="_on_destination_deck_area_input_event"]
+[connection signal="input_event" from="TrainDeckPile/ClickArea" to="." method="_on_train_deck_area_input_event"]
+[connection signal="input_event" from="DestinationDeckPile/ClickArea" to="." method="_on_destination_deck_area_input_event"]

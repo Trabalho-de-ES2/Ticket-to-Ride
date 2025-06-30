@@ -1,4 +1,3 @@
-# TrainCard.gd
 extends PanelContainer
 
 @export var card_data: Dictionary # To hold {"color": GameManager.CardColor.RED}

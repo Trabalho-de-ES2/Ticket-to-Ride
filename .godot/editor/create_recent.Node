@@ -1,3 +1,5 @@
+PanelContainer
+CanvasLayer
 Panel
 HBoxContainer
 CollisionShape2D
@@ -5,6 +7,4 @@ Area2D
 TextureRect
 Label
 VBoxContainer
-CanvasLayer
-PanelContainer
 Button
